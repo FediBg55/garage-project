@@ -1,0 +1,36 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="48" y1="36" x2="460" y2="484" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1C2230"/>
+      <stop offset="1" stop-color="#050A14"/>
+    </linearGradient>
+    <linearGradient id="steelGrad" x1="132" y1="104" x2="356" y2="386" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FAFF"/>
+      <stop offset="1" stop-color="#8B98AF"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="228" y1="174" x2="414" y2="324" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#57E2FF"/>
+      <stop offset="1" stop-color="#1A78FF"/>
+    </linearGradient>
+    <filter id="outerGlow" x="0" y="0" width="512" height="512" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+
+  <rect x="36" y="36" width="440" height="440" rx="86" fill="url(#bgGrad)"/>
+  <rect x="36" y="36" width="440" height="440" rx="86" stroke="#DCE7FF" stroke-opacity="0.92" stroke-width="6"/>
+  <rect x="36" y="36" width="440" height="440" rx="86" stroke="#2CCAFF" stroke-opacity="0.85" stroke-width="4" filter="url(#outerGlow)"/>
+
+  <g opacity="0.97">
+    <path d="M256 98L280 92L294 118L326 122L334 90L360 94L360 126L390 142L416 122L434 142L414 168L430 196L462 198L462 226L430 236L420 268L444 286L430 312L398 304L374 326L384 358L358 374L336 348L304 360L298 392L270 398L258 370L226 364L208 392L180 382L186 350L158 332L132 352L112 330L132 304L118 274L86 268L82 240L114 232L122 200L98 178L114 150L146 160L170 136L158 104L184 92L206 118L238 112L256 98Z" fill="#91A4C3" fill-opacity="0.18"/>
+    <circle cx="256" cy="256" r="134" stroke="url(#steelGrad)" stroke-width="18"/>
+    <circle cx="256" cy="256" r="118" stroke="#071122" stroke-width="30"/>
+  </g>
+
+  <path d="M120 334L190 176H256L180 334H120Z" fill="url(#steelGrad)"/>
+  <path d="M132 320H196L178 350H92L132 320Z" fill="#CDD7E7"/>
+
+  <path d="M256 214C278 186 322 172 388 172H444L420 204H372C328 204 300 212 282 230C270 242 264 258 264 278C264 300 272 316 288 328C304 340 326 346 354 346H400L382 380H334C292 380 258 370 234 350C210 330 198 304 198 272C198 248 206 228 224 212C232 204 242 198 256 214Z" fill="url(#blueGrad)"/>
+  <path d="M326 248H438L422 278H332L326 248Z" fill="#E7EEF9"/>
+  <path d="M382 312H442L416 352H360L382 312Z" fill="#9EB0CB"/>
+</svg>
