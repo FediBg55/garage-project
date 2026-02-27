@@ -25,7 +25,7 @@ export default function HomePage() {
               <a className="btn btn-primary" href="/rendez-vous">
                 <T k="home.book" />
               </a>
-              <a className="btn btn-secondary" href="https://wa.me/21600000000">
+              <a className="btn btn-secondary" href="https://wa.me/21629337242">
                 WhatsApp
               </a>
             </div>
@@ -64,7 +64,7 @@ export default function HomePage() {
             <h2><T k="home.needTitle" /></h2>
             <p><T k="home.needText" /></p>
             <div className="cta-row">
-              <a className="btn btn-primary" href="tel:+21600000000">
+              <a className="btn btn-primary" href="tel:+21673321333">
                 <T k="home.contactGarage" />
               </a>
             </div>

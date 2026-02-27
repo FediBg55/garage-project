@@ -1,32 +1,26 @@
 import Link from "next/link";
 import T from "../../components/t";
 
-const services = [
-  {
-    title: "home.s1",
-    description: "home.s1d",
-    benefits: ["home.v1", "home.v2", "home.v3"],
-  },
-  {
-    title: "home.s2",
-    description: "home.s2d",
-    benefits: ["home.v1", "home.v2", "home.v3"],
-  },
-  {
-    title: "home.s3",
-    description: "home.s3d",
-    benefits: ["home.v1", "home.v2", "home.v3"],
-  },
-  {
-    title: "home.s4",
-    description: "home.s4d",
-    benefits: ["home.v1", "home.v2", "home.v3"],
-  },
-  {
-    title: "home.s5",
-    description: "home.s5d",
-    benefits: ["home.v1", "home.v2", "home.v3"],
-  },
+const heavyServices = [
+  "services.heavy.tachograph",
+  "services.heavy.diagnostic",
+  "services.heavy.electrical",
+  "services.heavy.alignment",
+  "services.heavy.ac",
+  "services.heavy.nitrogen",
+  "services.heavy.plates",
+  "services.heavy.parts",
+];
+
+const lightServices = [
+  "services.light.diagnostic",
+  "services.light.alignment",
+  "services.light.ac",
+  "services.light.bodywork",
+  "services.light.quick",
+  "services.light.plates",
+  "services.light.nitrogen",
+  "services.light.parts",
 ];
 
 export const metadata = {
@@ -44,20 +38,31 @@ export default function ServicesPage() {
           <p><T k="services.subtitle" /></p>
         </div>
         <div className="grid page-grid">
-          {services.map((service) => (
-            <article key={service.title} className="card span-6 service-card">
-              <h2><T k={service.title} /></h2>
-              <p><T k={service.description} /></p>
-              <ul className="bullet-list">
-                {service.benefits.map((item) => (
-                  <li key={item}><T k={item} /></li>
-                ))}
-              </ul>
-              <Link href="/rendez-vous" className="btn btn-primary">
-                <T k="services.cta" />
-              </Link>
-            </article>
-          ))}
+          {/* Heavy Trucks & Buses */}
+          <article className="card span-6 service-card">
+            <h2 className="service-category-title">🚛 <T k="services.heavyTitle" /></h2>
+            <ul className="bullet-list">
+              {heavyServices.map((key) => (
+                <li key={key}><T k={key} /></li>
+              ))}
+            </ul>
+            <Link href="/rendez-vous" className="btn btn-primary">
+              <T k="services.cta" />
+            </Link>
+          </article>
+
+          {/* Light Vehicles & Utilities */}
+          <article className="card span-6 service-card">
+            <h2 className="service-category-title">🚗 <T k="services.lightTitle" /></h2>
+            <ul className="bullet-list">
+              {lightServices.map((key) => (
+                <li key={key}><T k={key} /></li>
+              ))}
+            </ul>
+            <Link href="/rendez-vous" className="btn btn-primary">
+              <T k="services.cta" />
+            </Link>
+          </article>
         </div>
       </div>
     </section>

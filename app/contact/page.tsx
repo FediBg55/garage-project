@@ -1,7 +1,7 @@
 import T from "../../components/t";
 
 const mapsEmbed =
-  "https://www.google.com/maps?q=36.8065,10.1815&z=14&output=embed";
+  "https://www.google.com/maps?q=Zone+Industrielle+Sidi+Abdelhamid+4061+Sousse+Tunisia&z=15&output=embed";
 
 export const metadata = {
   title: "Contact",
@@ -18,18 +18,19 @@ export default function ContactPage() {
           <p><T k="contact.subtitle" /></p>
           <div className="contact-list">
             <p>
-              <strong><T k="contact.address" />:</strong> A renseigner, Tunis
+              <strong><T k="contact.address" />:</strong> Zone Industrielle Sidi Abdelhamid - 4061 Sousse
             </p>
             <p>
               <strong><T k="contact.phone" />:</strong>{" "}
-              <a href="tel:+21600000000">+216 00 000 000</a>
+              <a href="tel:+21673321333">73 321 333</a> / <a href="tel:+21673321330">73 321 330</a> / <a href="tel:+21629337242">29 337 242</a> / <a href="tel:+21629308989">29 308 989</a>
             </p>
             <p>
               <strong>WhatsApp:</strong>{" "}
-              <a href="https://wa.me/21600000000">+216 00 000 000</a>
+              <a href="https://wa.me/21629337242">+216 29 337 242</a>
             </p>
             <p>
-              <strong>Email:</strong> contact@garage-jawhara.tn
+              <strong>Email:</strong>{" "}
+              <a href="mailto:sgja.zind1@gmail.com">sgja.zind1@gmail.com</a>
             </p>
           </div>
           <h2><T k="contact.hours" /></h2>

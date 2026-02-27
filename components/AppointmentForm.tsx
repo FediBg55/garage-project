@@ -26,7 +26,7 @@ export default function AppointmentForm() {
   const [result, setResult] = useState<string | null>(null);
 
   const whatsappLink = useMemo(() => {
-    const phone = process.env.NEXT_PUBLIC_WHATSAPP_PHONE ?? "21600000000";
+    const phone = process.env.NEXT_PUBLIC_WHATSAPP_PHONE ?? "21629337242";
     const text = [
       "Bonjour Ste Garage Jawhara, je souhaite prendre rendez-vous.",
       `Nom: ${form.fullName}`,
