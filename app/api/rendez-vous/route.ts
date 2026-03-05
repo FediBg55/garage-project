@@ -64,10 +64,6 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         error: "Impossible d'enregistrer le rendez-vous.",
-        detail:
-          process.env.NODE_ENV === "production"
-            ? undefined
-            : `${error.code ?? "no_code"}: ${error.message}`,
       },
       { status: 500 }
     );

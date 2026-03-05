@@ -12,7 +12,7 @@ export default function GlobalError({
       <body>
         <main style={{ padding: "32px", fontFamily: "Segoe UI, sans-serif" }}>
           <h1>Erreur systeme</h1>
-          <p>{error.message || "Erreur globale inattendue."}</p>
+          <p>{"Erreur globale inattendue. Veuillez reessayer."}</p>
           <button onClick={reset}>Reessayer</button>
         </main>
       </body>

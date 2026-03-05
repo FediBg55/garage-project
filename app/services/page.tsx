@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import T from "../../components/t";
 
 const heavyServices = [
@@ -36,6 +37,16 @@ export default function ServicesPage() {
         <div className="section-head reveal-up">
           <h1><T k="services.title" /></h1>
           <p><T k="services.subtitle" /></p>
+          <div style={{ marginTop: "1.5rem" }}>
+            <Image
+              src="/bosch-automotive.png"
+              alt="Bosch Automotive"
+              width={280}
+              height={140}
+              style={{ objectFit: "contain" }}
+              priority
+            />
+          </div>
         </div>
         <div className="grid page-grid">
           {/* Heavy Trucks & Buses */}
