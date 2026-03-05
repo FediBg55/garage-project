@@ -14,7 +14,16 @@ function invalid(message: string) {
 }
 
 export async function POST(request: Request) {
-  const supabaseAdmin = getSupabaseAdmin();
+  let supabaseAdmin;
+  try {
+    supabaseAdmin = getSupabaseAdmin();
+  } catch (e) {
+    console.error("[rendez-vous] Supabase init failed:", (e as Error).message);
+    return NextResponse.json(
+      { error: "Configuration serveur manquante." },
+      { status: 500 }
+    );
+  }
   let payload: AppointmentBody;
 
   try {
@@ -61,6 +70,7 @@ export async function POST(request: Request) {
   }
 
   if (error) {
+    console.error("[rendez-vous] Supabase error:", error.code, error.message);
     return NextResponse.json(
       {
         error: "Impossible d'enregistrer le rendez-vous.",
