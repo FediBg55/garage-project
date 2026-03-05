@@ -73,7 +73,7 @@ export async function POST(request: Request) {
     console.error("[rendez-vous] Supabase error:", error.code, error.message);
     return NextResponse.json(
       {
-        error: "Impossible d'enregistrer le rendez-vous.",
+        error: `Debug: ${error.code} - ${error.message}`,
       },
       { status: 500 }
     );
