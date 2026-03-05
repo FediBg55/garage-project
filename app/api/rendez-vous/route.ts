@@ -70,10 +70,13 @@ export async function POST(request: Request) {
   }
 
   if (error) {
-    console.error("[rendez-vous] Supabase error:", error.code, error.message);
+    const errMsg = error.message ?? String(error);
+    const errCode = error.code ?? "no_code";
+    console.error("[rendez-vous] Supabase error:", errCode, errMsg);
     return NextResponse.json(
       {
-        error: `Debug: ${error.code} - ${error.message}`,
+        error: `Debug: ${errCode} - ${errMsg}`,
+        url_check: process.env.NEXT_PUBLIC_SUPABASE_URL?.slice(0, 30) + "...",
       },
       { status: 500 }
     );
