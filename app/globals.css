@@ -263,6 +263,59 @@ a {
   box-shadow: 0 16px 30px rgba(6, 26, 46, 0.14);
 }
 
+.swipe-hint {
+  margin-top: 10px;
+  color: #5a6f8d;
+  font-size: 0.95rem;
+}
+
+.video-carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(280px, 78%);
+  gap: 16px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 8px;
+}
+
+.video-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.video-carousel::-webkit-scrollbar-thumb {
+  background: rgba(24, 52, 90, 0.25);
+  border-radius: 999px;
+}
+
+.video-slide {
+  scroll-snap-align: start;
+  background: linear-gradient(180deg, #ffffff, #f4f8fd);
+  border: 1px solid #dbe6f3;
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.video-slide-media {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.video-slide-title {
+  margin: 10px 0 0;
+  font-weight: 700;
+  color: #18345a;
+}
+
+@media (min-width: 900px) {
+  .video-carousel {
+    grid-auto-columns: minmax(320px, 40%);
+  }
+}
+
 .service-card {
   opacity: 0;
   transform: translateY(22px);

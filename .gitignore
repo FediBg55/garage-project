@@ -35,3 +35,12 @@ next-env.d.ts
 # IDE
 .vscode/
 .idea/
+
+# local source media
+/Bosch-Fini.mp4
+/video1.mov
+/video2.mov
+/bardahl1 (1).jpeg
+/bardahl1 (2).jpeg
+/Black and Blue Illustrated We are Looking For Facebook Post.png
+/Get Ready to Hit the Road! Enjoy Exceptional Car Repair Services That Keep You Driving Smoothly..png

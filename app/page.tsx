@@ -1,3 +1,4 @@
+import Image from "next/image";
 import T from "../components/t";
 import IntroVideoOverlay from "../components/intro-video-overlay";
 
@@ -10,6 +11,12 @@ const services = [
 ];
 
 const strengths = ["home.v1", "home.v2", "home.v3"];
+
+const garageVideos = [
+  { src: "/video1.mov", title: "Video 1" },
+  { src: "/video2.mov", title: "Video 2" },
+  { src: "/bosch-fini.mp4", title: "Bosch-Fini" },
+];
 
 export default function HomePage() {
   return (
@@ -30,6 +37,60 @@ export default function HomePage() {
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <article className="card reveal-up">
+            <h2><T k="home.bardahlTitle" /></h2>
+            <p><T k="home.bardahlText" /></p>
+            <div className="grid page-grid" style={{ marginTop: "1rem" }}>
+              <div className="span-6 card service-card">
+                <Image
+                  src="/bardahl-1.jpeg"
+                  alt="Bardahl certification 1"
+                  width={1200}
+                  height={900}
+                  style={{ width: "100%", height: "auto", borderRadius: 10 }}
+                />
+              </div>
+              <div className="span-6 card service-card">
+                <Image
+                  src="/bardahl-2.jpeg"
+                  alt="Bardahl certification 2"
+                  width={1200}
+                  height={900}
+                  style={{ width: "100%", height: "auto", borderRadius: 10 }}
+                />
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <article className="card reveal-up">
+            <h2><T k="home.videosTitle" /></h2>
+            <p><T k="home.videosText" /></p>
+            <p className="swipe-hint"><T k="home.videosHint" /></p>
+            <div className="video-carousel" style={{ marginTop: "1rem" }}>
+              {garageVideos.map((video) => (
+                <div key={video.src} className="video-slide">
+                  <video
+                    src={video.src}
+                    controls
+                    muted
+                    playsInline
+                    preload="metadata"
+                    className="video-slide-media"
+                  />
+                  <p className="video-slide-title">{video.title}</p>
+                </div>
+              ))}
+            </div>
+          </article>
         </div>
       </section>
 
