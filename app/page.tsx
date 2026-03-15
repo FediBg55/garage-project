@@ -47,6 +47,15 @@ export default function HomePage() {
             <p><T k="home.bardahlText" /></p>
             <div className="grid page-grid" style={{ marginTop: "1rem" }}>
               <div className="span-6 card service-card">
+                <p style={{ marginBottom: "0.75rem", fontWeight: 700, fontSize: "1.12rem", lineHeight: 1.55 }}>
+                  Les principales fonctionnalités de la machine Bardahl :
+                </p>
+                <p style={{ margin: "0 0 0.35rem", fontSize: "1.03rem", lineHeight: 1.55 }}>1️⃣ Nettoyage du filtre à particules (FAP / DPF)</p>
+                <p style={{ margin: "0 0 0.35rem", fontSize: "1.03rem", lineHeight: 1.55 }}>2️⃣ Nettoyage du système d’injection</p>
+                <p style={{ margin: "0 0 0.35rem", fontSize: "1.03rem", lineHeight: 1.55 }}>3️⃣ Décrassage du moteur</p>
+                <p style={{ margin: "0 0 0.35rem", fontSize: "1.03rem", lineHeight: 1.55 }}>4️⃣ Nettoyage du turbo et admission d’air</p>
+                <p style={{ margin: "0 0 0.35rem", fontSize: "1.03rem", lineHeight: 1.55 }}>5️⃣ Diagnostic et contrôle avant/après</p>
+                <p style={{ margin: "0 0 0.85rem", fontSize: "1.03rem", lineHeight: 1.55 }}>6️⃣ Nettoyage sans démontage</p>
                 <Image
                   src="/bardahl-1.jpeg"
                   alt="Bardahl certification 1"
@@ -63,6 +72,13 @@ export default function HomePage() {
                   height={900}
                   style={{ width: "100%", height: "auto", borderRadius: 10 }}
                 />
+                <p style={{ margin: "0.85rem 0 0.5rem", fontWeight: 700, fontSize: "1.12rem", lineHeight: 1.55 }}>
+                  ✅ Résultat pour le client :
+                </p>
+                <p style={{ margin: "0 0 0.35rem", fontSize: "1.03rem", lineHeight: 1.55 }}>• Moins de fumée noire</p>
+                <p style={{ margin: "0 0 0.35rem", fontSize: "1.03rem", lineHeight: 1.55 }}>• Moteur plus puissant</p>
+                <p style={{ margin: "0 0 0.35rem", fontSize: "1.03rem", lineHeight: 1.55 }}>• Consommation réduite</p>
+                <p style={{ margin: "0", fontSize: "1.03rem", lineHeight: 1.55 }}>• Moins de pollution</p>
               </div>
             </div>
           </article>
