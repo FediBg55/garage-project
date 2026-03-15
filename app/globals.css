@@ -309,6 +309,48 @@ a {
   color: #18345a;
 }
 
+.tachy-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.tachy-banner {
+  position: relative;
+  min-height: 420px;
+}
+
+.tachy-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.tachy-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  padding: clamp(20px, 4vw, 48px);
+  color: #f4f9ff;
+  background: linear-gradient(105deg, rgba(3, 17, 31, 0.8), rgba(8, 44, 78, 0.45));
+}
+
+.tachy-overlay h2 {
+  margin: 0;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  line-height: 1.08;
+}
+
+.tachy-overlay p {
+  margin: 0;
+  font-size: clamp(1.02rem, 1.75vw, 1.28rem);
+  line-height: 1.6;
+  max-width: 70ch;
+}
+
 @media (min-width: 900px) {
   .video-carousel {
     grid-auto-columns: minmax(320px, 40%);

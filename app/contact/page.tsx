@@ -3,6 +3,9 @@ import T from "../../components/t";
 const mapsEmbed =
   "https://www.google.com/maps?q=Zone+Industrielle+Sidi+Abdelhamid+4061+Sousse+Tunisia&z=15&output=embed";
 
+const mapsLocationLink =
+  "https://maps.app.goo.gl/8o8sgJVF4aigEE1x6?g_st=iwb";
+
 export const metadata = {
   title: "Contact",
   description:
@@ -34,8 +37,8 @@ export default function ContactPage() {
             </p>
           </div>
           <h2><T k="contact.hours" /></h2>
-          <p>Lundi - Vendredi: 08:00 - 18:00</p>
-          <p>Samedi: 08:00 - 13:00</p>
+          <p>Lundi - Vendredi: 08:00 - 17:00</p>
+          <p>Samedi: 08:00 - 14:00</p>
           <p>Dimanche: Ferme</p>
         </article>
 
@@ -50,6 +53,11 @@ export default function ContactPage() {
             referrerPolicy="no-referrer-when-downgrade"
             title="Carte Google Maps"
           />
+          <p style={{ marginTop: 12 }}>
+            <a href={mapsLocationLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary dark">
+              Ouvrir sur Google Maps
+            </a>
+          </p>
         </article>
       </div>
     </section>

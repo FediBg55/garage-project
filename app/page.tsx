@@ -87,6 +87,53 @@ export default function HomePage() {
 
       <section className="section">
         <div className="container">
+          <article className="card reveal-up tachy-card">
+            <div className="tachy-banner">
+              <Image
+                src="/tachy.webp"
+                alt="Service Tachygraphie"
+                width={1200}
+                height={800}
+                className="tachy-image"
+              />
+              <div className="tachy-overlay">
+                <h2>Service Tachygraphie</h2>
+                <p>
+                  Le service tachygraphie assure le contrôle, l’analyse et la gestion des données du tachygraphe afin de garantir le respect de la réglementation sur les temps de conduite et de repos des conducteurs.
+                </p>
+                <p>
+                  Il permet d’améliorer la sécurité routière, d’éviter les infractions et d’assurer un suivi fiable des activités des véhicules de transport. 🚚📊
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <article className="card reveal-up tachy-card">
+            <div className="tachy-banner">
+              <Image
+                src="/control.webp"
+                alt="Chaîne de contrôle"
+                width={1200}
+                height={800}
+                className="tachy-image"
+              />
+              <div className="tachy-overlay">
+                <h2>Chaîne de contrôle</h2>
+                <p>
+                  Chaîne de contrôle : vérification complète du véhicule avant la visite technique afin d’assurer sécurité, conformité et réussite au contrôle technique.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
           <article className="card reveal-up">
             <h2><T k="home.videosTitle" /></h2>
             <p><T k="home.videosText" /></p>
