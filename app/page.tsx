@@ -103,8 +103,15 @@ export default function HomePage() {
                 </p>
                 <p>
                   Il permet d’améliorer la sécurité routière, d’éviter les infractions et d’assurer un suivi fiable des activités des véhicules de transport. 🚚📊
-                </p>
-              </div>
+                </p>                <ul className="tachy-list">
+                  <li>✅ Plombage du tachygraphe conformément aux normes en vigueur</li>
+                  <li>✅ Dossier métrologique certifié par l'Agence Nationale de Métrologie</li>
+                  <li>✅ Contrôle et analyse des données du tachygraphe</li>
+                  <li>✅ Suivi et archivage des activités des conducteurs et des véhicules</li>
+                </ul>
+                <p className="tachy-conclusion">
+                  Un service essentiel pour assurer la conformité réglementaire, la sécurité et la fiabilité de votre flotte de transport. ✅🚛📈
+                </p>              </div>
             </div>
           </article>
         </div>
