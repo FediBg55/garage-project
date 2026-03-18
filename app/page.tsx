@@ -104,6 +104,7 @@ export default function HomePage() {
                 <p>
                   Il permet d’améliorer la sécurité routière, d’éviter les infractions et d’assurer un suivi fiable des activités des véhicules de transport. 🚚📊
                 </p>                <ul className="tachy-list">
+                  <li>✅ Réparation, montage tachygraphe et mise à jour</li>
                   <li>✅ Plombage du tachygraphe conformément aux normes en vigueur</li>
                   <li>✅ Dossier métrologique certifié par l'Agence Nationale de Métrologie</li>
                   <li>✅ Contrôle et analyse des données du tachygraphe</li>
@@ -133,6 +134,66 @@ export default function HomePage() {
                 <p>
                   Chaîne de contrôle : vérification complète du véhicule avant la visite technique afin d’assurer sécurité, conformité et réussite au contrôle technique.
                 </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <article className="card reveal-up">
+            <h2 style={{ marginBottom: "1.5rem" }}>Modèles de Tachygraphes Disponibles</h2>
+            <div className="grid page-grid">
+              <div className="span-4 card service-card" style={{ textAlign: "center" }}>
+                <Image
+                  src="/mtco1324.webp"
+                  alt="MTCO 13.24"
+                  width={300}
+                  height={250}
+                  style={{ width: "100%", height: "auto", borderRadius: 10, marginBottom: "1rem" }}
+                />
+                <p style={{ fontWeight: 700, fontSize: "1.1rem" }}>MTCO 13.24</p>
+              </div>
+              <div className="span-4 card service-card" style={{ textAlign: "center" }}>
+                <Image
+                  src="/mtco2400.png"
+                  alt="MTCO 2400"
+                  width={300}
+                  height={250}
+                  style={{ width: "100%", height: "auto", borderRadius: 10, marginBottom: "1rem" }}
+                />
+                <p style={{ fontWeight: 700, fontSize: "1.1rem" }}>MTCO 2400</p>
+              </div>
+              <div className="span-4 card service-card" style={{ textAlign: "center" }}>
+                <Image
+                  src="/mtco8400.png"
+                  alt="MTCO 8400"
+                  width={300}
+                  height={250}
+                  style={{ width: "100%", height: "auto", borderRadius: 10, marginBottom: "1rem" }}
+                />
+                <p style={{ fontWeight: 700, fontSize: "1.1rem" }}>MTCO 8400</p>
+              </div>
+              <div className="span-4 card service-card" style={{ textAlign: "center" }}>
+                <Image
+                  src="/mtco1318.jpeg"
+                  alt="MTCO 1318"
+                  width={300}
+                  height={250}
+                  style={{ width: "100%", height: "auto", borderRadius: 10, marginBottom: "1rem" }}
+                />
+                <p style={{ fontWeight: 700, fontSize: "1.1rem" }}>MTCO 1318</p>
+              </div>
+              <div className="span-4 card service-card" style={{ textAlign: "center" }}>
+                <Image
+                  src="/veederroot.jpeg"
+                  alt="Veeder Root"
+                  width={300}
+                  height={250}
+                  style={{ width: "100%", height: "auto", borderRadius: 10, marginBottom: "1rem" }}
+                />
+                <p style={{ fontWeight: 700, fontSize: "1.1rem" }}>Veeder Root</p>
               </div>
             </div>
           </article>
