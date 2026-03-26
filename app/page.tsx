@@ -1,6 +1,5 @@
 import Image from "next/image";
 import T from "../components/t";
-import IntroVideoOverlay from "../components/intro-video-overlay";
 
 const services = [
   { title: "home.s1", text: "home.s1d" },
@@ -21,7 +20,6 @@ const garageVideos = [
 export default function HomePage() {
   return (
     <>
-      <IntroVideoOverlay />
       <section className="hero">
         <div className="container">
           <div className="hero-panel reveal-up">
